@@ -1,0 +1,16 @@
+    {{#each posts}}
+    <article class="post">
+        <div class="card">
+            <div class="card-header flex-row justify-space-between">
+            <h3>{{title}}</h3>
+            <h4>
+                Posted by {{user.username}} on {{created_at}}.
+            </h4>
+            </div>
+            <div class="card-body">
+            <p> {{blog_content}} </p>
+        </div>
+        </div> 
+        
+    </article>
+{{/each}}
