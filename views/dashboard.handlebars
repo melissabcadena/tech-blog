@@ -1,0 +1,44 @@
+<section>
+  <h2>Create New Post</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      Content
+      <textarea class="blog-content"></textarea>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Blog Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+<article class="post">
+        <div class="card">
+            <div class="card-header flex-row justify-space-between">
+            <h3>{{post.title}}</h3>
+            <h4>
+                Posted by {{post.user.username}} on {{format_date post.created_at}}.
+            </h4>
+            </div>
+            <div class="card-body">
+            <p> {{post.blog_content}} </p>
+            </div>
+        </div> 
+        
+    </article>
+    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>

@@ -12,10 +12,12 @@
   <div class="wrapper">
     <header class="hero">
         <nav>
+            <h3><a class="btn" href="/">Homepage</a></h3>            
             {{#if loggedIn}}
-            <h3><button class="btn logout">logout</button></h3>
+            <h3><a class="btn" href="/dashboard">Dashboard</a></h3>  
+            <h3><button class="btn logout">Logout</button></h3>
             {{else}}
-            <h3><a class="btn" href="/login">login</a></h3>
+            <h3><a class="btn" href="/login">Login</a></h3>
             {{/if}}
         </nav>
       <h1 class="app-title">
@@ -29,6 +31,7 @@
       Thanks for visiting!
     </footer>
   </div>
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
