@@ -18,3 +18,19 @@ This application was built to allow users to blog about anything tech related. U
 * JawsDB
 
 ## Screenshots
+
+* Homepage View
+Shows all posts
+<img src="./utils/images/homepage.png">
+
+* Login Page 
+Also has option to sign up instead
+<img src="./utils/images/login.png">
+
+* Single Post View
+When clicking on a post, you'll be routed to this view. In ths view, you can see and add comments to the post.
+<img src="./utils/images/single-post.png">
+
+* Dashboard View
+When logged in, you can view your dashboard that shows your posts. Here you have the ability to edit your posts and add comments.
+<img src="./utils/images/dashboard.png">
