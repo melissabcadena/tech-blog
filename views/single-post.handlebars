@@ -20,18 +20,21 @@
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button class='btn' type="submit">add comment</button>
   </div>
 </form>
 {{/if}}
 
 <div class="comments">
+    <br>
+    <h3 class= "dark"> Comments: </h3>
+    <br>
   {{#each post.comments}}
-  <section class="comment">
-    <div class="meta">
+  <section class="comment card">
+    <div class="meta card-header">
       {{user.username}} on {{format_date created_at}}
     </div>
-    <div class="text">
+    <div class="card-body text">
       {{comment_text}}
     </div>
   </section>

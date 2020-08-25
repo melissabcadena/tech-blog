@@ -3,11 +3,11 @@
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">Title</label>
+      <label class="input" for="post-title"><h3 class="dark">Title:</h3></label>
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      Content
+      <h3 class="dark">Content:</h3>
       <textarea class="blog-content"></textarea>
     </div>
     <button type="submit" class="btn">Submit</button>
@@ -34,7 +34,7 @@
         </div> 
         
     </article>
-    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    <a href="/dashboard/edit/{{post.id}}" class="btn edit-link">Edit post</a>
     </li>
     {{/each}}
   </ol>
