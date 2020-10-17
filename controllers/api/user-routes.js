@@ -63,7 +63,7 @@ router.post('/logout', (req, res) => {
     }
 });
 
-// DELETE /api/users/1
+// DELETE /api/user/1
 router.delete('/user/:id', withAuth, (req, res) => {
     User.destroy({
         where: {
