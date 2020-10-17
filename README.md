@@ -7,6 +7,7 @@ This application was built to allow users to blog about anything tech related. U
 ## Table of Contents
 * [Built With](#builtwith)
 * [Screenshots](#screenshots)
+* [Contributing](#contributing)
 * [Questions](#questions)
 
 ## Built With
