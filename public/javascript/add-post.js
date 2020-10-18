@@ -5,6 +5,7 @@ async function newFormHandler(event) {
     const title = document.querySelector('input[name="post-title"]').value;
     const blog_content = document.querySelector('.blog-content').value;
   
+    const token = localStorage.getItem("token");
 
     const response = await fetch(`/api/post`, {
       method: 'POST',
@@ -13,7 +14,8 @@ async function newFormHandler(event) {
         blog_content
       }),
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        authorization: `Bearer ${token}`
       }
     });
   
