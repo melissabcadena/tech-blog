@@ -3,7 +3,7 @@
             <div class="card-header flex-row justify-space-between">
             <h3>{{post.title}}</h3>
             <h4>
-                Posted by {{post.user.username}} on {{format_date post.created_at}}.
+                Posted by {{post.User.username}} on {{format_date post.created_at}}.
             </h4>
             </div>
             <div class="card-body">
@@ -32,7 +32,7 @@
   {{#each post.comments}}
   <section class="comment card">
     <div class="meta card-header">
-      {{user.username}} on {{format_date created_at}}
+      {{User.username}} on {{format_date created_at}}
     </div>
     <div class="card-body text">
       {{comment_text}}
